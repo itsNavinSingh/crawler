@@ -1,0 +1,19 @@
+{
+    "name": "Crawler",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceFolder": "/workspace/crawler",
+    "postCreateCommand": "mkdir -p /workspace/crawler && git clone https://github.com/itsNavinSingh/crawler.git /workspace/crawler || (cd /workspace/crawler && git init)",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.eol": "\n"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    }
+}
